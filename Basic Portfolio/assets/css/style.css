@@ -215,3 +215,40 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+/* index @ 980px */
+@media only screen and (max-width:980px) {
+  .main-section 
+  {
+   width: 810px;
+   height: 460px;
+  
+}
+.auth-image , h1{
+  width: auto;
+  height: auto;
+  font: 15;
+}
+
+
+}
+
+/* index @ 768px */
+@media only screen and (max-width:768px) {
+  .main-section 
+  {
+   width: 620;
+   height: 360px;
+
+  }
+}
+
+/* index @ 640px */
+@media only screen and (max-width:640px) {
+  .main-section 
+  {
+   width: 510px;
+   height: 300px;
+
+  }
+}
+
