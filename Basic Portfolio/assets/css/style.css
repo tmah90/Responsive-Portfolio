@@ -222,7 +222,7 @@ input[type=submit] {
   #body
   {
    width: 810px;
-   height: 460px;
+   height: auto;
   
 }
 .auth-image{
@@ -262,11 +262,14 @@ input[type=submit] {
 /* index @ 768px */
 @media only screen and (max-width:768px) {
   .main-section,
-  .body 
-  {
+  .body {
    width: 748px;
-   height: 398px;
+   height: auto;
 
+  }
+.container {
+    min-height: 100%;
+    position: relative;
   }
   .wrapper {
     min-height: 100%;
@@ -305,7 +308,7 @@ input[type=submit] {
     width:100%;
     bottom:0;
     left: 0;
-    height: 68px;
+    height: auto;
     text-align: center;
   }
 }
@@ -316,7 +319,7 @@ input[type=submit] {
   .body
   {
    width: 510px;
-   height: 900px;
+   height:auto;
    padding-left: 20px;
    padding-right: 20px;
    padding-top: 20px;
@@ -334,7 +337,7 @@ input[type=submit] {
   }
 
   .auth-image{
-    width: 479px;
+    width: 450px;
     height: 359px;
     position: relative;
   }
@@ -342,7 +345,7 @@ input[type=submit] {
   .aboutme{
     width: 128px;
     height: 96px;
-    position: relative;
+    position: center;
   }
   
   .h1 {
@@ -359,9 +362,10 @@ input[type=submit] {
     width: 100%;
     height: 154px;
     float: none;
-    text-align: left;
+    text-align: center;
     display: block;
   }
+/* footer wouldn't stick to the bottom, tried sticky, postioning */
 
   .footer {
     position: absolute;
@@ -375,15 +379,38 @@ input[type=submit] {
 
   nav {
     display: flex;
+    position: center;
   }
-
+;
 nav a {
   float:center;
   display: inline-block;
   text-align: right;
   width: 580;
   height: 65px;
-
-}
 }
 
+/* portfolio */
+.work{
+  width:100%;
+  display: block;
+}
+
+.work img {
+  width: 80%;
+  
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
